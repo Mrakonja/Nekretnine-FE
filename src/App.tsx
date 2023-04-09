@@ -1,31 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from './Components/Layout/Layout';
+import HomePage from './Components/HomePage/HomePage';
+import AboutPage from './Components/AboutPage/AboutPage';
+import ContactPage from './Components/ContactPage/ContactPage';
 import { MainContextProvider } from './Context/MainContext';
-import Test from './Components/Test';
 
-function App() {
-    return (
-      <MainContextProvider>
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.tsx</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              Learn React
-            </a>
-          <Test />
-          </header>
-        </div>
-      </MainContextProvider>
+const App = () => {
+  return (
+    <BrowserRouter>
+    <MainContextProvider>
+    <Routes >
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="contact" element={<ContactPage />} />
+      </Route>
+    </Routes>
+    </MainContextProvider>
+  </BrowserRouter>
   );
-}
+};
 
 export default App;
