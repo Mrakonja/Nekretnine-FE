@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { MainContext } from '../Context/MainContext';
 
-const Test = () => {
+const TestContext = () => {
     const { state, updateUsername } = useContext(MainContext);
     const { username } = state;
 
@@ -22,4 +22,4 @@ const switchName = () => {
   )
 }
 
-export default Test;
+export default TestContext;
