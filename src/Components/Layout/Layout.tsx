@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
+import style from './Layout.module.css';
 
 interface LayoutProps {
     some?: string;
@@ -7,7 +8,7 @@ interface LayoutProps {
 
 const Layout = ({ }:LayoutProps) => {
   return (
-    <div>
+    <div className={style.wrapper}>
       <header>
        header nekretnine
       </header>
