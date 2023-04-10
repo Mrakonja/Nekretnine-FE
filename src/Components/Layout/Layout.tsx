@@ -1,6 +1,8 @@
 import React from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import style from './Layout.module.scss';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 interface LayoutProps {
     some?: string;
@@ -9,28 +11,11 @@ interface LayoutProps {
 const Layout = ({ }:LayoutProps) => {
   return (
     <div className={style.wrapper}>
-      <header>
-       header nekretnine
-      </header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+        <Header />
       <main>
       <Outlet />
       </main>
-      <footer>
-       footer
-      </footer>
+      <Footer />
     </div>
   );
 };
