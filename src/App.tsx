@@ -5,6 +5,7 @@ import HomePage from './Components/HomePage/HomePage';
 import AboutPage from './Components/AboutPage/AboutPage';
 import ContactPage from './Components/ContactPage/ContactPage';
 import { MainContextProvider } from './Context/MainContext';
+import './styles/global.scss'
 
 const App = () => {
   return (

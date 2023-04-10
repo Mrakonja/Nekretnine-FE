@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './AboutPage.module.scss'
 
 interface AboutPageProps {
     some?: string;
@@ -6,7 +7,7 @@ interface AboutPageProps {
 
 const AboutPage = ({some}:AboutPageProps) => {
   return (
-    <div>
+    <div className={style.wrapper}>
       <h1>About Page nekretnine!</h1>
       <p></p>
     </div>

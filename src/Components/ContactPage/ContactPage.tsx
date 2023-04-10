@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './ContactPage.module.scss'
 
 interface ContactPageProps {
     some?: string;
@@ -6,7 +7,7 @@ interface ContactPageProps {
 
 const ContactPage = ({some}:ContactPageProps) => {
   return (
-    <div>
+    <div className={style.wrapper}>
       <h1>Contact Page Nekretnine!</h1>
       <p></p>
     </div>
