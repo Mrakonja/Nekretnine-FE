@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './AboutPage.module.css'
+import style from './AboutPage.module.scss'
 
 interface AboutPageProps {
     some?: string;

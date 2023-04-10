@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
-import style from './Layout.module.css';
+import style from './Layout.module.scss';
 
 interface LayoutProps {
     some?: string;

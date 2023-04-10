@@ -1,6 +1,6 @@
 import React from 'react';
 import TestContext from '../TestContext';
-import style from './HomePage.module.css'
+import style from './HomePage.module.scss'
 
 interface HomePageProps {
     some?: string;
