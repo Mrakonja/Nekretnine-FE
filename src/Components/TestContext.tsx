@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { MainContext } from '../Context/MainContext';
+import Button from './Button/Button';
+import style from './Button/Button.module.scss';
 
 const TestContext = () => {
     const { state, updateUsername } = useContext(MainContext);
@@ -15,9 +17,11 @@ const switchName = () => {
     <div style={{color: 'red'}}>
           {username}
       </div>
-      <button onClick={switchName}>
-              Promeni ime u {username === 'Miladin' ? 'Pera' : 'Miladin'}
-      </button>
+      <Button classes={{color: style.blueWBButton, 
+        size: style.defaultButton, 
+        text: `Promeni ime u ${username === 'Miladin' ? 'Pera' : 'Miladin'}`}}
+         onClick={switchName} >Text</Button>
+      
     </>
   )
 }
