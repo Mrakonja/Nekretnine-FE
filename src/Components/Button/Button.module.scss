@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 
 /* button sizes  */
 
@@ -10,7 +12,7 @@ padding:  0.25rem, 1rem, 0.25rem, 1rem;
 border-radius: 4px;
 width: 6.87rem;
 height: 1.5rem;
-box-shadow: 0px 2px 4px rgba(58, 87, 232, 0.3);
+box-shadow: $shadowBtnColor;
 
 }
 
@@ -23,6 +25,7 @@ box-shadow: 0px 2px 4px rgba(58, 87, 232, 0.3);
     border-radius: 4px;
     width: 9.87rem;
     height: 2.75rem;
+    box-shadow: $shadowBtnColor;
 }
 
 .largeButton{
@@ -34,42 +37,42 @@ box-shadow: 0px 2px 4px rgba(58, 87, 232, 0.3);
     border-radius: 4px;
     width: 10.25rem;
     height: 3rem;
-    box-shadow: 0px 2px 4px rgba(58, 87, 232, 0.3);
+    box-shadow: $shadowBtnColor;
 }
 
 /*  classic buttons */
 
 .blueButton {
-    background-color: #3A57E8;
+    background-color: $blueBtn;
 }
 
 .darkGreyButton {
-    background-color: #6C757D;
+    background-color: $darkGreyBtn;
 }
 
 .greenButton {
-    background-color: #1AA053;
+    background-color: $greenBtn;
 }
 
 .redButton {
-    background-color: #C03221;
+    background-color: $redBtn;
 }
 
 .orangeButton {
-    background-color: #F16A1B;
+    background-color: $orangeBtn;
 }
 
 .aquaButton {
-    background-color: #079AA2;
+    background-color: $aquaBtn;
 }
 
 .lightGreyButton {
-    background-color: #DEE2E6;
+    background-color: $lightGreyBtn;
     color: black;
 }
 
 .blackButton {
-    background-color: #212529;
+    background-color: $blackBtn;
     
 }
 
@@ -82,79 +85,79 @@ box-shadow: 0px 2px 4px rgba(58, 87, 232, 0.3);
 
 .blueWBButton {
     border: solid;
-    border-color: #3A57E8;
-    color: #3A57E8;
+    border-color:$blueBtn;
+    color:$blueBtn;
 }
 
 .darkGreyWBButton {
     border: solid;
-    border-color: #6C757D;
-    color: #6C757D;
+    border-color: $darkGreyBtn;
+    color: $darkGreyBtn;
 }
 
 .greenWBButton {
     border: solid;
-    border-color: #1AA053;
-    color: #1AA053;
+    border-color: $greenBtn;
+    color: $greenBtn;
 }
 
 .redWBButton {
     border: solid;
-    border-color: #C03221;
-    color: #C03221;
+    border-color: $redBtn;
+    color: $redBtn;
 }
 
 .orangeWBButton {
     border: solid;
-    border-color: #F16A1B;
-    color: #F16A1B;
+    border-color: $orangeBtn;
+    color:$orangeBtn;
 }
 
 .aquWBaButton {
     border: solid;
-    border-color: #079AA2;
-    color: #079AA2;
+    border-color: $aquaBtn;
+    color: $aquaBtn;
 }
 
 .lightGreyWBButton{
     border: solid;
-    border-color: #DEE2E6;
-    color: #DEE2E6;
+    border-color: $lightGreyBtn;
+    color: $lightGreyBtn;
 }
 
 .blackWBButton {
     border: solid;
-    border-color: #212529;
-    color: #212529;
+    border-color: $blackBtn;
+    color: $blackBtn;
     
 }
 
 /* filled background buttons */
 
 .blueButton {
-    background-color: rgba(58, 87, 232, 0.2);
-    color: #2D42B2;
+    background-color:$blueBtn;
+    color: $blueBtnText;
 }
 
 .darkGreyButton {
-    background-color: rgba(33, 37, 41, 0.2);
+    background-color: $darkGreyBtn;
     color: black;
 }
 
 .greenButton {
-    background-color: rgba(26, 160, 83, 0.2);
-    color: #147A3F;
+    background-color: $greenBtn;
+    color: $greenBtnText;
 }
 
 .redButton {
-    background-color: rgba(192, 50, 33, 0.2);
-    color:#95271A ;
+    background-color: $redBtn;
+    color:$redBtnText;
 }
 
 
 .aquaButton {
-    background-color: rgba(7, 154, 162, 0.2);
-    color: #057980;
+    background-color: $aquaBtn;
+    color: $aquaBtnText;
 }
 
 

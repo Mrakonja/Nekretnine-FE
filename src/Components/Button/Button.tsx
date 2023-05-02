@@ -1,17 +1,23 @@
-import React from 'react'
-import classes from './Button.module.scss';
+import React from "react";
 
-const Button: React.FC<{ classes: {
-    color: string,
-    size: string,
-    text: string}, onClick: () => void }> = (props) => {
+interface Buttonstyle {
+  color: string;
+  size: string;
+  text: string;
+}
+
+const Button: React.FC<{
+  children: {};
+  classes: Buttonstyle;
+  onClick: () => void;
+}> = ({ classes, onClick }) => {
   return (
     <>
-    <button className={`${props.classes.color} ${props.classes.size}`} onClick={props.onClick}>{props.classes.text}</button>
-    
-    
+      <button className={`${classes.color} ${classes.size}`} onClick={onClick}>
+        {classes.text}
+      </button>
     </>
-  )
-}
+  );
+};
 
 export default Button;
